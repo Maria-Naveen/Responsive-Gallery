@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            margin: 0;
+        }
+        .column > img{
+            width: 100%;
+            vertical-align: middle;
+            margin-top: 8px;
+        }
+        .header{
+            text-align: center;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        .column{
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;;
+        }
+        @media(max-width: 800px){
+            .column{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        @media(max-width: 600px){
+            .column{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Responsive Gallery</h1>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="Images/pexels-bogdan-dirică-1645668.jpg" alt="A forest ball">
+            <img src="Images/pexels-christian-heitz-842711.jpg" alt="A valley">
+            <img src="Images/pexels-eberhard-grossgasteiger-443446.jpg" alt="a Butterfly">
+            <img src="Images/pexels-matheus-bertelli-573299.jpg" alt="A glowy girl">
+            <img src="Images/pexels-pixabay-326055.jpg" alt="Blue Butterflies">
+            <img src="Images/pexels-pixabay-33045.jpg" alt="A lion">
+        </div>
+        <div class="column">
+            <img src="Images/pexels-matheus-bertelli-573299.jpg" alt="A glowy girl">
+            <img src="Images/pexels-christian-heitz-842711.jpg" alt="A valley">
+            <img src="Images/pexels-pixabay-33045.jpg" alt="A lion">
+            <img src="Images/pexels-eberhard-grossgasteiger-443446.jpg" alt="a Butterfly">
+            <img src="Images/pexels-pixabay-326055.jpg" alt="Blue Butterflies">
+            <img src="Images/pexels-bogdan-dirică-1645668.jpg" alt="A forest ball">
+            
+        </div>
+        <div class="column">
+            <img src="Images/pexels-pixabay-87452.jpg">
+            <img src="Images/pexels-bogdan-dirică-1645668.jpg" alt="A forest ball">
+            <img src="Images/pexels-eberhard-grossgasteiger-443446.jpg" alt="a Butterfly">
+            <img src="Images/pexels-matheus-bertelli-573299.jpg" alt="A glowy girl">   
+            <img src="Images/pexels-pixabay-33045.jpg" alt="A lion">
+            <img src="Images/pexels-christian-heitz-842711.jpg" alt="A valley">
+        </div>
+        <div class="column">
+            <img src="Images/pexels-bogdan-dirică-1645668.jpg" alt="A forest ball">
+            <img src="Images/pexels-christian-heitz-842711.jpg" alt="A valley">
+            <img src="Images/pexels-eberhard-grossgasteiger-443446.jpg" alt="a Butterfly">
+            <img src="Images/pexels-matheus-bertelli-573299.jpg" alt="A glowy girl">
+            <img src="Images/pexels-pixabay-326055.jpg" alt="Blue Butterflies">
+            <img src="Images/pexels-pixabay-33045.jpg" alt="A lion">
+        </div>
+           
+    </div>
+</body>
+</html>
